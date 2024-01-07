@@ -1,0 +1,150 @@
+html,
+body {
+  background-color: rgba(147, 226, 0, 0.511);
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+a {}
+
+.hero:nth-child(1) {
+  background-color: rgb(114, 178, 75);
+}
+
+.hero:nth-child(1) .example-button {
+  background-color: rgb(255, 194, 27);
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.box {
+  background-color: rgb(32, 32, 32);
+  border: 10px solid rgb(32, 32, 32);
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: monospace;
+  font-size: 2rem;
+  width: 180px;
+  height: 180px;
+  text-align: center;
+}
+
+.hero:nth-child(2) {
+  background-color: rgb(75, 176, 178);
+}
+
+.hero:nth-child(2) .example-button:nth-child(1) {
+  background-color: rgb(27, 130, 255);
+}
+
+.hero:nth-child(2) .example-button:nth-child(2) {
+  background-color: rgb(187, 27, 255);
+}
+
+.hero:nth-child(3) {
+  background-color: rgb(118, 75, 178);
+}
+
+.hero:nth-child(3) .example-button:nth-child(1) {
+  background-color: rgb(57, 201, 76);
+}
+
+.hero:nth-child(4) {
+  background-color: rgb(201, 73, 90);
+}
+
+.hero:nth-child(4)>*:nth-child(1) {
+  flex-basis: 30%;
+  justify-content: flex-end;
+}
+
+.hero:nth-child(4)>*:nth-child(2) {
+  flex-basis: 70%;
+  justify-content: flex-start;
+}
+
+.special {
+  color: black;
+}
+
+.hero {
+  display: flex;
+  overflow: hidden;
+  gap: 1rem;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.extra {
+  height: 200vh;
+  background-color: rgb(247, 149, 58);
+  display: flex;
+  flex-direction: column;
+}
+
+.extra>div:nth-child(2){
+  padding: 4rem;
+  padding-bottom: 0.5rem;
+}
+
+.extra .sticky {
+  position: sticky;
+  top: 0;
+  padding-top: 0.5rem;
+}
+
+.end{
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  flex-grow: 1;
+}
+
+.hero>* {
+  display: flex;
+  flex-shrink: 0;
+  flex-grow: 0;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+
+.hero>*:nth-child(1) {
+  flex-basis: 40%;
+  justify-content: flex-end;
+}
+
+.hero>*:nth-child(2) {
+  flex-basis: 60%;
+  justify-content: flex-start;
+}
+
+
+h1,
+h3 {
+  color: white;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  text-align: center;
+}
+
+h3 {
+  color: rgba(255, 255, 255, 0.811);
+}
+
+.example-button {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: white;
+  font-size: 1.4rem;
+  border-radius: 0.4rem;
+  border: none;
+  padding: 0.7rem 1.5rem;
+  cursor: pointer;
+}
